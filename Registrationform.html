@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="orange">
+
+<style>
+    body {
+      background-image: url('school.jpg');
+    }
+    </style>
+
+
+<h1 align="center"> STUDENT REGISRATION FORM</h1>
+
+
+<form action="http://localhost/myprojectcgi/studentregistration.py" method="post">
+
+
+
+
+    <table align="left" cellpadding = "10">
+
+     <!--   First Name---------------------------------------------------------->
+    <tr>
+        <td>Fname</td>
+        <td><input type="text" name="fname"  maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </tr>
+
+    <!-- Last Name ------------------------------------------------------------->
+    <tr>
+        <td>Lname</td>
+        <td><input type="text" name="lname"  maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </tr>
+
+    <!-- Date of Birth ----------------------------------------------------------->
+    <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" name="dob"></td><
+    </tr>
+
+        <!----- Email Id ---------------------------------------------------------->
+        <tr>
+        <td>EMAIL ID</td>
+        <td><input type="text" name="Email_Id" maxlength="100" /></td>
+        </tr>
+
+
+    <!----- Mobile Number ---------------------------------------------------------->
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td><input type="text" name="Mobile_Number" maxlength="10" />(10 digit number)</td>
+        </tr>
+
+
+        <!-- Gender ---------------------------------------------------------------->
+        <tr>
+              <td>Gender</td>
+              <td><input type="radio" name="subject" value="Male"> Male
+                  <input type="radio" name="subject" value="Female"> Female</td>
+        </tr>
+
+        <!--  Address -------------------------------------------------------------->
+        <tr>
+            <td>Address</td>
+            <td><textarea name="Address"  rows="4" cols="30"></textarea></td>
+       </tr>
+
+        <!----- City ---------------------------------------------------------->
+       <tr>
+           <td>CITY</td>
+           <td><input type="text" name="City" maxlength="30" />(max 30 characters a-z and A-Z)
+           </td>
+       </tr>
+
+
+     <!----- Pin Code ---------------------------------------------------------->
+     <tr>
+           <td>PIN CODE</td>
+           <td><input type="text" name="Pin_Code" maxlength="6" />(6 digit number)
+           </td>
+     </tr>
+
+
+     <!----- State ---------------------------------------------------------->
+     <tr>
+          <td>STATE</td>
+          <td><input type="text" name="State" maxlength="30" />(max 30 characters a-z and A-Z)
+          </td>
+     </tr>
+
+        <!----- Country ---------------------------------------------------------->
+
+       <tr>
+          <td> Select Country<td/><select name="country" id="country">
+           <option value="India">India</option>
+           <option value="USA">USA</option>
+           <option value="Shrilanka">Shrilanka</option>
+           <option value="Nepal">Nepal</option>
+           <option value="Bhutan">Bhutan</option>
+           <option value="Pakistan">Pakistan</option>
+           <option value="Japan">Japan</option>
+           <option value="London">London</option>
+
+       </select>
+       </tr>
+
+
+
+
+        <!-- Input method --------------------------------------------------
+        <tr>
+
+         <td>COUNTRY</td>
+         <td><input type="text" name="Country" value="India" readonly="readonly" /></td>
+     </tr>
+
+        -->
+     <!----- Hobbies ---------------------------------------------------------->
+
+       <tr>
+             <td>HOBBIES <br /><br /><br /></td>
+             <td>Drawing<input type="checkbox" name="Hobby_Drawing" value="ON" />
+            Singing<input type="checkbox" name="Hobby_Singing" value="ON" />
+            Dancing<input type="checkbox" name="Hobby_Dancing" value="ON" />
+                 Sketching<input type="checkbox" name="Hobby_Cooking" value="ON" />
+            <br />
+            Others<input type="checkbox" name="Hobby_Other" value="ON">
+            <input type="text" name="Other_Hobby" maxlength="30" />
+            </td>
+       </tr>
+
+       <!----- Qualification---------------------------------------------------------->
+    <tr>
+         <td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+
+         <td>
+      <table>
+
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="Masters_Board" maxlength="30" /></td>
+<td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+
+
+
+
+
+
+        <!-- Submit ---------------------------------------------------------------->
+        <tr>
+            <td> <input type="submit" name="submit"></td>
+        </tr>
+
+    </table>
+
+
+
+</form>
+
+</body>
+</html>
